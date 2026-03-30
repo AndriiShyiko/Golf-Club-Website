@@ -2,7 +2,7 @@
 Developed by: Andrii Shyiko
 Date: 01/03/2026
 Purpose: Get staff members details
-Screen Name: Amend/View Staff
+Screen Name: Delete Staff
 -->
 <?php 
 include "db.inc.php"; // include databse connection
