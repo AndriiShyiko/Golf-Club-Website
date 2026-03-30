@@ -1,0 +1,385 @@
+* {
+    box-sizing: border-box;
+}
+
+/*        body style */
+body
+{
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    margin: 0; /* margin 0 */
+    display: flex; /* display flex */
+    height: 100vh; /* height 100 vh */
+    background: #f4f7f6; /* background white */
+}
+/* Sidebar Styling */
+.sidebar
+{
+    min-width: 250px; /* width 250 px */
+    background: #02674a; /* background color */
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar h2
+{
+    padding: 20px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgb(62, 152, 112); /*#02674a*/
+}
+.sidebar a
+{
+    padding: 15px 20px;
+    color: #5ed086;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.sidebar a:hover, .active
+{
+    background: #1a4f36; /*#2d6a4f;*/
+    color: white;
+}
+/* Content Area */
+.main-content {
+    margin-top: 5rem;
+    flex: 1;
+    padding: 0px 30px 30px 30px;
+    /*overflow-y: auto;*/
+}
+.card
+{
+    border-top: 4px solid #02674a;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card > h2 {
+    text-align: center;
+}
+/* Target only the form with the "main-form" class */
+.main-form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 20px auto;
+}
+
+.main-form.main-form--large {
+    max-width: 980px;
+}
+
+/* Target the button container inside THIS specific form */
+.main-form .button {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+main {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.navbar {
+    max-width: 710px;
+    margin: 0px auto 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.navbar__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /*flex-direction: column;*/
+    gap: 10px;
+}
+
+.menu__item > a {
+    display: block;
+    padding: 12px 15px;
+    width: 160px;
+    background-color: #f4f7f6;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #02674a;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.menu__item > a:hover {
+    background-color: #02674a;
+    color: white;
+    border-color: #02674a;
+}
+
+/* input box style */
+.input__box, .select__box {
+    display: flex; /* display flex */
+    padding: 10px; /* padding is 10px */
+    align-items: center; /* align items vertically centered */
+}
+
+/* input box label style */
+.input__box > label,
+.select__box > label {
+    display: block; /* display block */
+    min-width: 150px; /* min width is 150px */
+    color: #141c19; /* color is green */
+}
+
+/* input box input style */
+.input__box > input,
+.select__box > input,
+.input__box > textarea {
+    width: 100%; /* width is 100% */
+    border: 1px solid #8c8c8c; /* border is grey */
+    padding: 10px; /* padding of the input is 10 px */
+}
+
+.input__box.input__box--medium,
+.select__box.select__box--medium {
+    width: 500px;
+    margin: 0 auto;
+}
+
+
+/* input box input style for date */
+.input__box > input[type="date"] {
+    width: 150px; /* width 150px */
+}
+
+/* input box input style */
+.input__box > input:focus,
+.select__box > input:focus,
+.input__box > textarea:focus{
+    outline: 0; /* outline is 0 */
+}
+
+.input__box > textarea {
+    height: 70px;
+    resize: none;
+}
+
+/* button box style */
+.button__box {
+    display: flex; /* display flex */
+    padding: 0 20px; /* padding 20 px */
+    gap: 20px; /* gap is 20 px */
+    margin-top: 20px;
+}
+
+/* button box input styles */
+.button__box > input {
+    background-color: #2f5d50; /* background color is green */
+    border: 1px solid #24493f; /* border is green */
+    color: #ffffff; /* text color is white */
+    cursor: pointer; /* cursor is pointer */
+    text-transform: uppercase; /* text transform uppercase */
+    width: 70px; /* width is 70 px */
+    height: 40px; /* height is 40 px */
+    border-radius: 0; /* border radius is 0 */
+}
+
+/* styled Select */
+.listbox {
+    width: 100%; /* width 100% */
+    border: 1px solid #8c8c8c; /* border 1 px */
+    background-color: #ffffff; /* background color is white */
+    font-size: 14px; /* font size 14 px */
+    cursor: pointer; /* cursor pointer */
+    padding: 10px 5px; /* padding 10px 5px */
+}
+
+.listbox:hover {
+    border-color: #2f5d50; /* hover is green */
+}
+
+.listbox:focus {
+    border-color: #2f5d50; /* border is green */
+    outline: none; /* outline none */
+}
+
+/* stock sent section start */
+
+#stock__item_sent h2 {
+    color: #02674a;
+    margin-bottom: 20px;
+}
+
+/* container spacing */
+.container__info {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+    border-radius: 12px;
+    max-width: 900px;
+}
+
+/* success header styling */
+.confirmation__details {
+    overflow-x: auto;
+}
+
+/* confirmation table */
+.confirmation__details table {
+    border-collapse: collapse;
+    min-width: 880px;
+    font-size: 14px;
+}
+
+/* header row */
+.cnf-h-row {
+    background-color: #02674a;
+}
+
+.cnf-h-cell {
+    padding: 12px;
+    color: white;
+    font-weight: 600;
+    text-align: left;
+}
+
+/* data row */
+.cnf-i-cell {
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+}
+
+/* highlight stock number */
+.cnf-i-cell:first-child {
+    font-weight: bold;
+    color: #2f5d50;
+}
+
+.button__links {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.button__links > a {
+    padding: 10px 15px;
+    width: 125px;
+    background-color: #2f5d50;
+    border: 1px solid #24493f;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+}
+
+.button__links > a {
+    padding: 10px 15px;
+    width: 125px;
+    background-color: #2f5d50;
+    border: 1px solid #24493f;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+}
+
+.button__links > a.button__link-item--large {
+    width: 150px;
+}
+
+/* delete stock item sent start */
+.wrapper__find,
+#selectStockItem,
+#stockNumBlock,
+#descriptionBlock,
+#submitDeleteStock{
+    display: none;
+}
+
+.wrapper__find.open,
+#selectStockItem.open,
+#stockNumBlock.open,
+#descriptionBlock.open,
+#submitDeleteStock.open{
+    display: block;
+}
+
+.primary_btn {
+    width: 80px;
+    height: 40px;
+    background-color: #2f5d50;
+    border: 1px solid #24493f;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.primary_btn.primary_btn--large {
+    width: 120px;
+}
+
+.primary_btn.primary_btn--xxl {
+    width: 160px;
+}
+
+#cardDelete h3 {
+    text-align: center;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.search__button-box {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+.search__button-box.search__button-box--left {
+    justify-content: start;
+}
+
+.button__box.button__box--report {
+    justify-content: center;
+    margin: 20px;
+}
+
+.button__box.button__box--report > button:disabled {
+    background-color: #c5c5c5;
+    color: black;
+}
+
+.display_error {
+    font-size: 20px; /* font-size 20px */
+    color: red; /* color is red */
+}
+
+a.pegasus_golf_link {
+    padding: 0;
+    color: white;
+    transition: 0s;
+}
+
+a.pegasus_golf_link:hover {
+    background: none;
+}
+
+.logo__image {
+    padding: 20px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgb(62, 152, 112); /*#02674a*/
+    display: flex;
+    justify-content: center;
+}
+
+.logo__image img {
+    width: 100px;
+    height: 100px;
+}
